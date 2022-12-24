@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import web.service.CarService;
 
+
 @Controller
 @RequestMapping ("/cars")
 public class CarController {
@@ -19,7 +20,7 @@ public class CarController {
         this.carService = carService;
     }
 
-    @GetMapping(value = "")
+    @GetMapping()
     public String getAllListOfCars(Model model, @RequestParam(required = false) Integer count) {
 
         carService.createListUsers();
