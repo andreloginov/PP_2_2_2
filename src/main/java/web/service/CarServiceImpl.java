@@ -10,6 +10,7 @@ import java.util.stream.Collectors;
 @Component
 public class CarServiceImpl implements CarService {
     private List<Car> carList;
+
     @Override
     public void createListUsers() {
         carList = Arrays.asList(
